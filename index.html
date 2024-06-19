@@ -1,0 +1,45 @@
+<html>
+    <head>
+       <title>App Selfie por Voz</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <a href=""id="link"download="minhselfie.png"></a>
+        <h1>App Selfie por Voz 
+        <img id="logo_img" src="https://sombrinhazul.wordpress.com/wp-content/uploads/2014/06/jolie.png">
+        </h1>
+        <hr>
+        
+        <div class="form-group">
+        <h3>Diga "Num ninho de mafagafos há sete mafagafinhos. Quando a mafagafa gafa, gafam os sete mafagafinhos."</h3>
+        <label>Sua saída de voz: </label>
+        <textarea class="form-control" id="textbox" readoly="true"></textarea>
+        </div>
+
+        <button class="btn btn-primary" onclick="start()">Iniciar</button>
+        <p>Pressione o botão Iniciar</p>
+
+        <label>Sua webcam: </label>
+        <div id="camera"></div>
+        
+        <br>
+
+        <label>Sua selfie será exibida aqui: </label>
+        <div id="result" ></div>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
